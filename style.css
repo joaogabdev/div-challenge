@@ -86,8 +86,8 @@ body{
     }
 
     h4{
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     button {
         width: 250px;
@@ -101,24 +101,66 @@ body{
         margin-top: 20px;
   
     }
+
+    #pesquisar {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 10px;
+}
+
+
+}
+
+.nomes {
+    margin-top: 15px;
+}
+
+.pessoa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.pessoa img {
+    width: 40px;
+    height: 40px;
+}
+
+.pessoa h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.pessoa p {
+    font-size: 11px;
+    color: gray;
+    margin-top: 3px;
 }
 
 .tela4{
     h3{
     color: #530318;
     text-align:center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
     }
 
     h5{
-        margin-top: 20px;
-        margin-bottom: 20px;
+   
+        margin-bottom: 190px;
     }
-    img{
-        border-radius: 50px;
-
-     }
+img {
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
 
     button {
         width: 250px;
@@ -148,7 +190,7 @@ body{
 
 
 .saldo {
-    border: 1px solid white;
+
     border-radius: 15px;
     padding: 10px;
 }
@@ -167,7 +209,7 @@ body{
 }
 
 .atalhos h2 {
-    background-color: #fce3eb;
+
     color: #bd0334;
     border-radius: 50%;
     padding: 8px;
@@ -190,7 +232,7 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #fce3eb;
+
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
@@ -217,7 +259,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid #ddd;
+
     padding: 10px 0;
 }
 
