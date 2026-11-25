@@ -10,6 +10,28 @@
 body{
     font-family: "Quicksand", Helvetica, sans-serif;
 }
+
+.primeirasection{
+    background-color: #660620;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segundasection{
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .inicio{
     padding: 40px;
 
@@ -17,10 +39,12 @@ body{
     
 
     h1{
-        color:rgb(146, 21, 21);
+        /* color:rgb(146, 21, 21); */
+        color: aliceblue;
     }
     h3{
-        color: rgb(147, 155, 155);
+         color: rgb(147, 155, 155); 
+  
     }
 
 }
@@ -236,8 +260,13 @@ img {
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
+    
 }
 
+.protecao{
+    text-decoration: none;
+    color: black;
+}
 .protecao h2 {
     color: #bd0334;
 }
@@ -251,6 +280,9 @@ img {
     font-size: 9px;
 }
 
+.protecao{
+    text-decoration: none;
+}
 
 
 .menu {

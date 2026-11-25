@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-color: #660620;
+}
+
+.botao{
+    button{
+        background-color: #bd0334;
+        color: azure;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+    }
+}
+
+.tela1, .tela2, .tela3, .tela4 {
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    border: 5px solid #222;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tela2{
+    text-align: center;
+
+    h5{
+        background-color: #d425544d;
+        color: black;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    h3{
+        color: #530318;
+    }
+
+    h4{
+        margin-bottom: 20px;
+    }
+    img{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
