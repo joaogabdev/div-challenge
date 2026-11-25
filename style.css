@@ -125,3 +125,103 @@ body{
         
     }
 }
+
+
+
+.tela1 {
+    padding: 0;
+}
+
+
+.cabecalho {
+    background-color: #bd0334;
+    color: white;
+    padding: 15px;
+    height: 200px;
+    border-radius: 25px 25px ;
+}
+
+.cabecalho h3 {
+    margin-bottom: 15px;
+}
+
+
+
+.saldo {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.saldo h2 {
+    margin: 5px 0;
+}
+
+
+
+.atalhos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.atalhos h2 {
+    background-color: #fce3eb;
+    color: #bd0334;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.atalhos p {
+    font-size: 9px;
+}
+
+
+
+.tela1 h4 {
+    margin-left: 10px;
+}
+
+
+
+.protecao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fce3eb;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.protecao h2 {
+    color: #bd0334;
+}
+
+.protecao h4 {
+    margin: 0;
+    font-size: 11px;
+}
+
+.protecao p {
+    font-size: 9px;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.menu p {
+    font-size: 9px;
+    color: #bd0334;
+}
