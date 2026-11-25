@@ -25,6 +25,15 @@ body{
 
 }
 
+.botao{
+        button{
+        background-color: #bd0334;
+        color: azure;
+        border: none;
+        border-radius: 15px;
+        padding:15px;
+    }
+}
 
 .todastelas {
     padding: 80px;
@@ -48,13 +57,7 @@ body{
 
 .tela2{
     text-align: center;
-    button{
-        background-color: #bd0334;
-        color: azure;
-        border: none;
-        border-radius: 15px;
-        padding:15px;
-    }
+
     h5{
         background-color: #d425544d;
         color: black;
@@ -72,5 +75,53 @@ body{
     img{
         margin-bottom: 15px;
         margin-top: 15px;
+    }
+}
+
+.tela3{
+    h3{
+    color: #530318;
+    text-align:center;
+    margin-bottom: 15px;
+    }
+
+    h4{
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    button {
+        width: 250px;
+        
+    }
+
+    img{
+        border-radius: 15px;
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+  
+    }
+}
+
+.tela4{
+    h3{
+    color: #530318;
+    text-align:center;
+    margin-bottom: 15px;
+    
+    }
+
+    h5{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    img{
+        border-radius: 50px;
+
+     }
+
+    button {
+        width: 250px;
+        
     }
 }
