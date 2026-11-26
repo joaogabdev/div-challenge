@@ -1,0 +1,648 @@
+/* ===== CORES E CONFIGURAÇÕES BÁSICAS ===== */
+:root {
+  --vermelho: #cc092f;
+  --vermelho-escuro: #a30724;
+  --vermelho-claro: #fdecef;
+  --cinza-fundo: #f3f4f6;
+  --cinza-borda: #e1e4e8;
+  --cinza-texto: #4b5563;
+  --preto: #1f2328;
+  --branco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* evita que o menu cubra os títulos */
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--cinza-texto);
+  background-color: var(--branco);
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== MENU DO TOPO ===== */
+.topo {
+  position: sticky;
+  top: 0;
+  background-color: var(--branco);
+  border-bottom: 1px solid var(--cinza-borda);
+  z-index: 10;
+}
+
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  color: var(--vermelho);
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--preto);
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: var(--vermelho);
+  border-bottom-color: var(--vermelho);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  padding: 90px 0;
+}
+
+.hero-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.selo {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.frase-impacto {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero-texto p {
+  max-width: 560px;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 32px;
+  background-color: var(--branco);
+  color: var(--vermelho);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--cinza-fundo);
+  transform: translateY(-3px);
+}
+
+/* Área visual do hero */
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.escudo {
+  background-color: var(--branco);
+  color: var(--preto);
+  width: 360px;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.escudo-icone {
+  font-size: 56px;
+  text-align: center;
+}
+
+.escudo-titulo {
+  text-align: center;
+  font-weight: 700;
+  margin: 8px 0 20px;
+}
+
+.escudo-linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--cinza-borda);
+  font-size: 15px;
+}
+
+.escudo-linha strong {
+  color: var(--vermelho);
+}
+
+.escudo-linha strong.ok {
+  color: #2e7d32;
+}
+
+/* ===== SEÇÕES ===== */
+.secao {
+  padding: 90px 0;
+}
+
+.secao-cinza {
+  background-color: var(--cinza-fundo);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--preto);
+  margin-bottom: 8px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--vermelho);
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.subtitulo {
+  margin: 16px 0 40px;
+  max-width: 700px;
+}
+
+h3 {
+  color: var(--preto);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ===== GRADES E CARDS ===== */
+.grade {
+  display: grid;
+  gap: 28px;
+}
+
+.grade-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grade-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: var(--branco);
+  border: 1px solid var(--cinza-borda);
+  border-radius: 20px;
+  padding: 32px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--vermelho);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card.destaque {
+  border-top: 5px solid var(--vermelho);
+}
+
+/* Etapas */
+.etapa .numero {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+/* Telas do protótipo */
+.tela {
+  padding: 20px 20px 28px;
+}
+
+.tela-imagem {
+  height: 280px;
+  background-color: var(--cinza-fundo);
+  border: 2px dashed #b8bec6;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* ===== IMPACTO ===== */
+.lista-impacto {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  max-width: 800px;
+}
+
+.lista-impacto li {
+  background-color: var(--branco);
+  border-left: 6px solid var(--vermelho);
+  border-radius: 14px;
+  padding: 20px 24px;
+  font-size: 20px;
+  color: var(--preto);
+  transition: transform 0.2s;
+}
+
+.lista-impacto li:hover {
+  transform: translateX(6px);
+}
+
+/* ===== FINALIZAÇÃO ===== */
+.final {
+  background-color: var(--vermelho-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 90px 0 40px;
+}
+
+.frase-final {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.creditos {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== AJUSTE BÁSICO PARA TELAS MENORES ===== */
+@media (max-width: 900px) {
+  .menu { display: none; }
+  .hero-conteudo { flex-direction: column; }
+  .hero h1 { font-size: 40px; }
+  .grade-2, .grade-3 { grid-template-columns: 1fr; }
+  .frase-final { font-size: 26px; }
+}
+
+
+/* =====================================================
+   PROTÓTIPO (telas do antigo index.html / style.css)
+   Tudo escopado em .prototipo-telas para não conflitar
+   com os estilos do site (h2, h3, .botao, etc.)
+   ===================================================== */
+.prototipo-telas {
+  background-color: #660620;
+  border-radius: 28px;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+}
+
+/* Neutraliza estilos globais do site dentro das telas */
+.prototipo-telas h2,
+.prototipo-telas h3,
+.prototipo-telas h4,
+.prototipo-telas h5 {
+  margin: 0;
+  color: inherit;
+  max-width: none;
+}
+.prototipo-telas h2 { font-size: 1.5em; }
+.prototipo-telas h3 { font-size: 1.17em; }
+.prototipo-telas h4 { font-size: 1em; }
+.prototipo-telas h5 { font-size: 0.83em; }
+.prototipo-telas h2::after { content: none; display: none; }
+
+/* .botao do site é um link-botão; aqui é só um wrapper */
+.prototipo-telas .botao {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  font-weight: inherit;
+  transition: none;
+}
+.prototipo-telas .botao:hover {
+  background: none;
+  transform: none;
+}
+.prototipo-telas .botao button {
+  background-color: #bd0334;
+  color: azure;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Moldura de celular */
+.prototipo-telas .tela1,
+.prototipo-telas .tela2,
+.prototipo-telas .tela3,
+.prototipo-telas .tela4,
+.prototipo-telas .tela5,
+.prototipo-telas .tela6 {
+  width: 300px;
+  height: 550px;
+  background-color: white;
+  border: 5px solid #222;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* ---------- Tela 1: home ---------- */
+.prototipo-telas .tela1 { padding: 0; }
+
+.prototipo-telas .cabecalho {
+  background-color: #bd0334;
+  color: white;
+  padding: 15px;
+  height: 200px;
+  border-radius: 25px;
+}
+.prototipo-telas .cabecalho h3 { margin-bottom: 15px; color: white; }
+
+.prototipo-telas .saldo { border-radius: 15px; padding: 10px; }
+.prototipo-telas .saldo h2 { margin: 5px 0; color: white; }
+
+.prototipo-telas .atalhos {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 0;
+}
+.prototipo-telas .atalhos h2 {
+  color: #bd0334;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 18px;
+}
+.prototipo-telas .atalhos p { font-size: 9px; }
+
+.prototipo-telas .tela1 h4 { margin-left: 10px; }
+
+.prototipo-telas .protecao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+.prototipo-telas .protecao h2 { color: #bd0334; }
+.prototipo-telas .protecao h4 { margin: 0; font-size: 11px; }
+.prototipo-telas .protecao p { font-size: 9px; }
+
+/* ---------- Tela 2: rede de proteção ---------- */
+.prototipo-telas .tela2 { text-align: center; }
+.prototipo-telas .tela2 h5 {
+  background-color: #d425544d;
+  color: black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.prototipo-telas .tela2 h3 { color: #530318; }
+.prototipo-telas .tela2 h4 { margin-bottom: 20px; }
+.prototipo-telas .tela2 img { margin-top: 15px; margin-bottom: 15px; }
+
+/* ---------- Tela 3: cadastrar pessoa ---------- */
+.prototipo-telas .tela3 h3 {
+  color: #530318;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.prototipo-telas .tela3 h4 { margin-top: 10px; margin-bottom: 20px; }
+.prototipo-telas .tela3 button { width: 250px; }
+.prototipo-telas .tela3 img {
+  border-radius: 15px;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.prototipo-telas input[type="search"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.prototipo-telas .nomes { margin-top: 15px; }
+.prototipo-telas .pessoa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.prototipo-telas .pessoa img { width: 40px; height: 40px; margin-top: 0; }
+.prototipo-telas .pessoa h4 { margin: 0; font-size: 13px; }
+.prototipo-telas .pessoa p { font-size: 11px; color: gray; margin-top: 3px; }
+
+/* ---------- Tela 4: confirmação ---------- */
+.prototipo-telas .tela4 h3 {
+  color: #530318;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.prototipo-telas .tela4 h5 { margin-bottom: 190px; }
+.prototipo-telas .tela4 img {
+  border-radius: 50px;
+  display: block;
+  margin: 50px auto 20px;
+}
+.prototipo-telas .tela4 button { width: 250px; }
+
+/* ---------- Tela 5: Pix pausado ---------- */
+.prototipo-telas .tela5 { text-align: center; }
+.prototipo-telas .tela5 h3 { color: #530318; margin-bottom: 8px; }
+.prototipo-telas .tela5 h4 { font-size: 13px; margin-bottom: 12px; }
+.prototipo-telas .tela5 .resumo {
+  background-color: #d425544d;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.prototipo-telas .tela5 .resumo p { font-size: 12px; margin-bottom: 5px; }
+.prototipo-telas .tela5 .resumo h5 { color: #530318; font-size: 14px; }
+.prototipo-telas .tela5 ul { list-style: none; margin-bottom: 12px; }
+.prototipo-telas .tela5 li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  color: inherit;
+}
+.prototipo-telas .tela5 .aviso { font-size: 11px; color: gray; margin-bottom: 12px; }
+
+/* ---------- Tela 6: histórico ---------- */
+.prototipo-telas .tela6 h3 {
+  color: #530318;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.prototipo-telas .tela6 .evento {
+  border: 1px solid #ccc;
+  border-left: 6px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.prototipo-telas .tela6 .evento h4 { font-size: 13px; }
+.prototipo-telas .tela6 .evento p { font-size: 11px; margin-top: 3px; }
+.prototipo-telas .tela6 .alto  { border-left-color: #bd0334; }
+.prototipo-telas .tela6 .medio { border-left-color: #e8a317; }
+.prototipo-telas .tela6 .baixo { border-left-color: #2e8b57; }
+.prototipo-telas .tela6 .legenda {
+  font-size: 11px;
+  color: gray;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ---------- Botões das telas 5 e 6 ---------- */
+.prototipo-telas .acao {
+  display: block;
+  width: 250px;
+  margin: 0 auto 8px;
+  padding: 12px;
+  background-color: #bd0334;
+  color: azure;
+  border: 1px solid #bd0334;
+  border-radius: 15px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.prototipo-telas .acao.secundaria { background-color: white; color: #bd0334; }
+
+@media (max-width: 900px) {
+  .prototipo-telas { padding: 40px 10px; border-radius: 20px; }
+}
+
+
+/* ---------- Protótipo funcional (celular único e clicável) ---------- */
+.prototipo-funcional {
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+.prototipo-funcional .proto-cabecalho { text-align: center; }
+.prototipo-funcional .proto-cabecalho h3 {
+  color: aliceblue;
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+.prototipo-funcional .proto-cabecalho p { color: #b9c0c0; }
+
+.prototipo-funcional .tela-view { display: none; }
+.prototipo-funcional .tela-view.ativa {
+  display: block;
+  animation: proto-entrada 0.25s ease;
+}
+@keyframes proto-entrada {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.prototipo-funcional [data-ir] { cursor: pointer; }
+.prototipo-funcional .protecao:hover { background-color: #fdecef; }
+
+.proto-passos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 720px;
+}
+.proto-passos button {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.proto-passos button:hover { background-color: rgba(255, 255, 255, 0.25); }
+.proto-passos button.ativo {
+  background-color: #fff;
+  color: #bd0334;
+  border-color: #fff;
+  font-weight: 700;
+}
+
+.proto-subtitulo { margin-bottom: 20px; }
