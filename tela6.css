@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-color: #660620;
+}
+
+.tela1, .tela2, .tela3, .tela4, .tela5, .tela6 {
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    border: 5px solid #222;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tela6{
+    h3{
+        color: #530318;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .evento{
+        border: 1px solid #ccc;
+        border-left: 6px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    .evento h4{
+        font-size: 13px;
+    }
+
+    .evento p{
+        font-size: 11px;
+        margin-top: 3px;
+    }
+
+    .alto{
+        border-left-color: #bd0334;
+    }
+
+    .medio{
+        border-left-color: #e8a317;
+    }
+
+    .baixo{
+        border-left-color: #2e8b57;
+    }
+
+    .legenda{
+        font-size: 11px;
+        color: gray;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.acao{
+    display: block;
+    width: 250px;
+    margin: 0 auto 8px;
+    padding: 12px;
+    background-color: #bd0334;
+    color: azure;
+    border: 1px solid #bd0334;
+    border-radius: 15px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.secundaria{
+    background-color: white;
+    color: #bd0334;
+}

@@ -68,7 +68,7 @@ body{
     flex-wrap: wrap;
 }
 
-.tela1, .tela2, .tela3, .tela4 {
+.tela1, .tela2, .tela3, .tela4, .tela5, .tela6 {
     width: 300px;
     height: 550px;
     background-color: white;
@@ -297,5 +297,119 @@ img {
 
 .menu p {
     font-size: 9px;
+    color: #bd0334;
+}
+
+
+.tela5{
+    text-align: center;
+
+    h3{
+        color: #530318;
+        margin-bottom: 8px;
+    }
+
+    h4{
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .resumo{
+        background-color: #d425544d;
+        border-radius: 15px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .resumo p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .resumo h5{
+        color: #530318;
+        font-size: 14px;
+    }
+
+    ul{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 12px;
+    }
+
+    .aviso{
+        font-size: 11px;
+        color: gray;
+        margin-bottom: 12px;
+    }
+}
+
+.tela6{
+    h3{
+        color: #530318;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .evento{
+        border: 1px solid #ccc;
+        border-left: 6px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    .evento h4{
+        font-size: 13px;
+    }
+
+    .evento p{
+        font-size: 11px;
+        margin-top: 3px;
+    }
+
+    .alto{
+        border-left-color: #bd0334;
+    }
+
+    .medio{
+        border-left-color: #e8a317;
+    }
+
+    .baixo{
+        border-left-color: #2e8b57;
+    }
+
+    .legenda{
+        font-size: 11px;
+        color: gray;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.acao{
+    display: block;
+    width: 250px;
+    margin: 0 auto 8px;
+    padding: 12px;
+    background-color: #bd0334;
+    color: azure;
+    border: 1px solid #bd0334;
+    border-radius: 15px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.secundaria{
+    background-color: white;
     color: #bd0334;
 }
