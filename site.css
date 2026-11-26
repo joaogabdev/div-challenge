@@ -1,4 +1,4 @@
-/* ===== CORES E CONFIGURAÇÕES BÁSICAS ===== */
+
 :root {
   --vermelho: #cc092f;
   --vermelho-escuro: #a30724;
@@ -16,10 +16,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* evita que o menu cubra os títulos */
-}
+
 
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -35,14 +32,8 @@ body {
   margin: 0 auto;
 }
 
-/* ===== MENU DO TOPO ===== */
-.topo {
-  position: sticky;
-  top: 0;
-  background-color: var(--branco);
-  border-bottom: 1px solid var(--cinza-borda);
-  z-index: 10;
-}
+
+
 
 .topo-conteudo {
   display: flex;
@@ -58,26 +49,9 @@ body {
   text-decoration: none;
 }
 
-.menu {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-}
 
-.menu a {
-  color: var(--preto);
-  text-decoration: none;
-  font-size: 16px;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-}
 
-.menu a:hover {
-  color: var(--vermelho);
-  border-bottom-color: var(--vermelho);
-}
 
-/* ===== HERO ===== */
 .hero {
   background-color: var(--vermelho);
   color: var(--branco);
@@ -132,12 +106,8 @@ body {
   transition: background-color 0.2s, transform 0.2s;
 }
 
-.botao:hover {
-  background-color: var(--cinza-fundo);
-  transform: translateY(-3px);
-}
 
-/* Área visual do hero */
+
 .hero-visual {
   flex: 1;
   display: flex;
@@ -164,31 +134,13 @@ body {
   margin: 8px 0 20px;
 }
 
-.escudo-linha {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 0;
-  border-top: 1px solid var(--cinza-borda);
-  font-size: 15px;
-}
 
-.escudo-linha strong {
-  color: var(--vermelho);
-}
 
-.escudo-linha strong.ok {
-  color: #2e7d32;
-}
-
-/* ===== SEÇÕES ===== */
 .secao {
   padding: 90px 0;
 }
 
-.secao-cinza {
-  background-color: var(--cinza-fundo);
-}
+
 
 h2 {
   font-size: 38px;
@@ -196,15 +148,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: var(--vermelho);
-  border-radius: 2px;
-  margin-top: 12px;
-}
+
 
 .subtitulo {
   margin: 16px 0 40px;
@@ -239,11 +183,7 @@ h3 {
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  border-color: var(--vermelho);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-}
+
 
 .card.destaque {
   border-top: 5px solid var(--vermelho);
@@ -326,14 +266,6 @@ h3 {
   opacity: 0.8;
 }
 
-/* ===== AJUSTE BÁSICO PARA TELAS MENORES ===== */
-@media (max-width: 900px) {
-  .menu { display: none; }
-  .hero-conteudo { flex-direction: column; }
-  .hero h1 { font-size: 40px; }
-  .grade-2, .grade-3 { grid-template-columns: 1fr; }
-  .frase-final { font-size: 26px; }
-}
 
 
 /* =====================================================
@@ -381,10 +313,7 @@ h3 {
   font-weight: inherit;
   transition: none;
 }
-.prototipo-telas .botao:hover {
-  background: none;
-  transform: none;
-}
+
 .prototipo-telas .botao button {
   background-color: #bd0334;
   color: azure;
@@ -556,17 +485,7 @@ h3 {
   padding: 10px;
   margin-bottom: 12px;
 }
-.prototipo-telas .tela6 .evento h4 { font-size: 13px; }
-.prototipo-telas .tela6 .evento p { font-size: 11px; margin-top: 3px; }
-.prototipo-telas .tela6 .alto  { border-left-color: #bd0334; }
-.prototipo-telas .tela6 .medio { border-left-color: #e8a317; }
-.prototipo-telas .tela6 .baixo { border-left-color: #2e8b57; }
-.prototipo-telas .tela6 .legenda {
-  font-size: 11px;
-  color: gray;
-  text-align: center;
-  margin: 20px 0;
-}
+
 
 /* ---------- Botões das telas 5 e 6 ---------- */
 .prototipo-telas .acao {
