@@ -161,7 +161,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* ===== GRADES E CARDS ===== */
+
 .grade {
   display: grid;
   gap: 28px;
@@ -189,7 +189,7 @@ h3 {
   border-top: 5px solid var(--vermelho);
 }
 
-/* Etapas */
+
 .etapa .numero {
   width: 48px;
   height: 48px;
@@ -204,7 +204,6 @@ h3 {
   margin-bottom: 18px;
 }
 
-/* Telas do protótipo */
 .tela {
   padding: 20px 20px 28px;
 }
@@ -223,7 +222,7 @@ h3 {
   font-size: 15px;
 }
 
-/* ===== IMPACTO ===== */
+
 .lista-impacto {
   list-style: none;
   display: grid;
@@ -241,11 +240,8 @@ h3 {
   transition: transform 0.2s;
 }
 
-.lista-impacto li:hover {
-  transform: translateX(6px);
-}
 
-/* ===== FINALIZAÇÃO ===== */
+
 .final {
   background-color: var(--vermelho-escuro);
   color: var(--branco);
@@ -268,11 +264,7 @@ h3 {
 
 
 
-/* =====================================================
-   PROTÓTIPO (telas do antigo index.html / style.css)
-   Tudo escopado em .prototipo-telas para não conflitar
-   com os estilos do site (h2, h3, .botao, etc.)
-   ===================================================== */
+
 .prototipo-telas {
   background-color: #660620;
   border-radius: 28px;
@@ -288,7 +280,7 @@ h3 {
   color: #000;
 }
 
-/* Neutraliza estilos globais do site dentro das telas */
+
 .prototipo-telas h2,
 .prototipo-telas h3,
 .prototipo-telas h4,
@@ -303,7 +295,7 @@ h3 {
 .prototipo-telas h5 { font-size: 0.83em; }
 .prototipo-telas h2::after { content: none; display: none; }
 
-/* .botao do site é um link-botão; aqui é só um wrapper */
+
 .prototipo-telas .botao {
   display: block;
   margin: 0;
@@ -324,7 +316,7 @@ h3 {
   cursor: pointer;
 }
 
-/* Moldura de celular */
+
 .prototipo-telas .tela1,
 .prototipo-telas .tela2,
 .prototipo-telas .tela3,
@@ -341,7 +333,7 @@ h3 {
   overflow: hidden;
 }
 
-/* ---------- Tela 1: home ---------- */
+
 .prototipo-telas .tela1 { padding: 0; }
 
 .prototipo-telas .cabecalho {
@@ -386,7 +378,7 @@ h3 {
 .prototipo-telas .protecao h4 { margin: 0; font-size: 11px; }
 .prototipo-telas .protecao p { font-size: 9px; }
 
-/* ---------- Tela 2: rede de proteção ---------- */
+
 .prototipo-telas .tela2 { text-align: center; }
 .prototipo-telas .tela2 h5 {
   background-color: #d425544d;
@@ -399,7 +391,7 @@ h3 {
 .prototipo-telas .tela2 h4 { margin-bottom: 20px; }
 .prototipo-telas .tela2 img { margin-top: 15px; margin-bottom: 15px; }
 
-/* ---------- Tela 3: cadastrar pessoa ---------- */
+
 .prototipo-telas .tela3 h3 {
   color: #530318;
   text-align: center;
@@ -449,7 +441,7 @@ h3 {
 }
 .prototipo-telas .tela4 button { width: 250px; }
 
-/* ---------- Tela 5: Pix pausado ---------- */
+
 .prototipo-telas .tela5 { text-align: center; }
 .prototipo-telas .tela5 h3 { color: #530318; margin-bottom: 8px; }
 .prototipo-telas .tela5 h4 { font-size: 13px; margin-bottom: 12px; }
@@ -472,7 +464,7 @@ h3 {
 }
 .prototipo-telas .tela5 .aviso { font-size: 11px; color: gray; margin-bottom: 12px; }
 
-/* ---------- Tela 6: histórico ---------- */
+
 .prototipo-telas .tela6 h3 {
   color: #530318;
   text-align: center;
@@ -487,7 +479,7 @@ h3 {
 }
 
 
-/* ---------- Botões das telas 5 e 6 ---------- */
+
 .prototipo-telas .acao {
   display: block;
   width: 250px;
@@ -516,7 +508,6 @@ h3 {
 
 
 
-/* ---------- Protótipo funcional (celular único e clicável) ---------- */
 .prototipo-funcional {
   flex-direction: column;
   align-items: center;
